@@ -1,0 +1,43 @@
+{
+  "name": "express-seed",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Remo Valerio Labbia",
+    "email": "remo9611@gmail.com",
+    "url": "https://github.com/remix96"
+  },
+  "scripts": {
+    "start": "dotenv nodemon ./bin/www",
+    "eslint": "eslint . --ext .js",
+    "test": "mocha --ui tdd test/**/*.js",
+    "coverage": "nyc --reporter=html npm test"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.19.0",
+    "debug": "^2.6.8",
+    "express": "^4.17.1",
+    "make-dir": "^1.0.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.9",
+    "morgan": "^1.10.0",
+    "prompt": "^1.1.0",
+    "readline": "^1.3.0",
+    "split": "^1.0.0",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "dotenv-cli": "^1.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0"
+  }
+}
